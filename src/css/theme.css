@@ -4,8 +4,24 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100%;
 }
 
 body, .jumbotron {
-	background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+}
+
+.brainLine {
+  background-color: #ddd;
+}
+
+body:after {
+    content:"";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px dotted #444; /*change these values to suit your liking*/
 }
